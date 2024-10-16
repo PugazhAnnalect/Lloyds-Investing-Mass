@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lloyds Investing Mass Display Banners</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2 {
+            margin: 3rem 0;
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        .banner-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            column-gap: 2rem;
+            row-gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .banner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 1rem;
+            row-gap: 0.325rem;
+        }
+
+        .col-12 {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+
+        .banner span {
+            font-weight: bold;
+            display: inline-block;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
+        }
+
+        a.btn {
+            display: flex;
+            width: 120px;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #6cf479;
+            background-color: #6cf479;
+            color: #000000;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Lloyds Investing Mass Display Banners</h2>
+
+    <div class="banner-container">
+        <div class="col-12">
+            <div class="banner">
+                <span>Route 1 (Louise)</span>
+                <a class="btn" href="Louise/index.html" target="_blank">Route 1 &#x27A4;</a>
+            </div>
+            <div class="banner">
+                <span>Route 2 (Russell)</span>
+                <a class="btn" href="Russell/index.html" target="_blank">Route 2 &#x27A4;</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
