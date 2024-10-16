@@ -1,0 +1,352 @@
+body,
+body * {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  border: 0
+}
+
+button,
+div,
+img,
+svg,
+video {
+  position: absolute;
+}
+
+sup {
+  vertical-align: top;
+}
+
+#main_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1240px;
+  height: 528px;
+  background-color: #6cf479;
+  border: 1px solid #000;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+#main_content {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 1240px;
+  height: 528px;
+}
+
+.retina {
+  /*    for display on retina screens images created @2x actual dimensions then scaled back by 50%.
+  images are scaled from top left, which effects css when wanting to use other alignment
+  e.g. bottom:0; right:0; also requires transform-origin:bottom right;
+  02/2016 webkit browsers:
+  images including their containers must be block or inline-block.
+  if css display:none or display:inline then transforms fail.
+  */
+  -webkit-transform: scale(0.5, 0.5);
+  -moz-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+  -webkit-transform-origin: left top;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+
+  /* image-rendering: auto; */
+  /*image-rendering: crisp-edges;*/
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#default_exit {
+  top: 0px;
+  left: 0px;
+  width: 1240px;
+  height: 528px;
+  z-index: 500;
+}
+
+.btn {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+  background: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+  z-index: 200;
+}
+
+:focus {
+  outline: 0;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+/* Custom Styles */
+
+@font-face {
+  font-family: "GTU-Black";
+  src: url("./fonts/GTUltraMedianLloyds-Black.woff");
+}
+
+@font-face {
+  font-family: "GTU-Light";
+  src: url("./fonts/GTUltraLloyds-Light.woff");
+}
+
+@font-face {
+  font-family: "GTU-Bold";
+  src: url("./fonts/GTUltraLloyds-Bold.woff");
+}
+
+
+/* Images Styles */
+
+.canvasImage {
+  width: 1240px;
+  height: 528px;
+}
+
+.logo {
+  width: 177px;
+  right: 65px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo2 {
+  width: 72px;
+  top: 178px;
+  left: 114px;
+}
+
+.copy {
+  font-family: "GTU-Black";
+  color: #fff;
+}
+
+.copy1 {
+  font-size: 132px;
+  top: 90px;
+  left: 13px;
+  letter-spacing: -5px;
+  position: absolute;
+  height: auto;
+  /* background-color: #000; */
+  width: 1240px;
+  /* overflow: hidden; */
+}
+
+#i-like {
+  font-size: 35px;
+  position: absolute;
+  height: auto;
+  top: 22px;
+  left: 41px;
+  letter-spacing: normal;
+}
+
+#age {
+  font-family: "GTU-Light";
+  font-size: 27px;
+  position: absolute;
+  height: auto;
+  top: 64px;
+  left: 41px;
+  color: #fff;
+  letter-spacing: normal;
+}
+
+.yes {
+  position: relative;
+  overflow: hidden;
+  height: 140px;
+  margin-bottom: -30px;
+}
+
+
+#lineone {
+  /* top: 470px; */
+  position: absolute;
+  top: 6px;
+  left: 12px;
+  letter-spacing: -4px;
+}
+
+#linetwo {
+  width: 1240px;
+  /* top: 530px; */
+  top: 3px;
+  left: 33px;
+  letter-spacing: -4px;
+  position: absolute;
+  visibility: visible;
+}
+
+/* .copy2{
+  font-size: 50px;
+  left: 3px;
+  line-height: 48px;
+  width: 1240px;
+  overflow: hidden;
+  height: 270px;
+  bottom: 32px;
+  position: absolute;
+} */
+
+.copy2 {
+  font-size: 35.5px;
+  top: 332px;
+  left: 53px;
+  line-height: 50px;
+  width: 100%;
+  height: auto;
+  letter-spacing: -0.5px;
+}
+
+.copy2 div {
+  position: relative;
+  width: auto;
+  height: 58px;
+  margin-bottom: -15px;
+  overflow: hidden;
+}
+
+.copy2 div span.font-normal {
+  font-family: "GTU-Light";
+  font-size: 27.5px;
+}
+
+/* .copy2 div:nth-child(1) {
+  padding-top: 15px;
+}
+
+.copy2 div:nth-child(2) {
+  padding-top: 23px;
+}
+
+.copy2 div:nth-child(3) {
+  padding-top: 24px;
+  margin-left: 3px;
+} */
+
+.copy2 span {
+  position: absolute;
+}
+
+.copy3 {
+  top: 100px;
+  color: #000;
+  left: 55px;
+  font-size: 122px;
+  letter-spacing: -3px;
+  width: auto;
+  line-height: 115px;
+}
+
+.copy4 {
+  font-family: "GTU-Light";
+  font-size: 27px;
+  top: 353px;
+  left: 58px;
+  line-height: 32px;
+  width: auto;
+}
+
+b {
+  font-family: "GTU-Bold"
+}
+
+.copy4 span {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.legal {
+  font-family: "GTU-Light";
+  font-size: 19px;
+  color: #fff;
+  bottom: 11px;
+  width: auto;
+  left: 55px;
+}
+
+.cta {
+  font-family: "GTU-Bold";
+  color: #000;
+  font-size: 24px;
+  bottom: 152px;
+  right: 64px;
+  width: 184px;
+  height: 60px;
+  border-radius: 50px;
+  border: #000 solid 2px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#green {
+  background-color: #6cf479;
+  width: 1240px;
+  height: 528px;
+  left: -1240px;
+}
+
+/* 
+#imageWrapper {
+  transform-origin: 50% 65%;
+  transform: scale(2);
+}
+
+#cta {
+  transform-origin: 50% 89%;
+}
+ */
+
+
+
+/* horse */
+.horse_static {
+  top: 145px;
+  right: 111px;
+  width: 92px;
+}
+
+.horse_gif {
+  top: 173px;
+  left: 126px;
+  width: 49px;
+}
+
+.logo_text {
+  top: 242px;
+  right: 68px;
+  width: 178px;
+}
